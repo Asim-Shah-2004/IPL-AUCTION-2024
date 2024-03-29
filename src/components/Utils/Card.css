@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8rem;
+  height: 11rem;
+  cursor: pointer;
+  border: .2rem solid whitesmoke;
+  border-radius: 10px;
+}
+
+.legend {
+  border: .2rem solid #e19d28;
+  box-shadow: 0 0 25px #e19d28;
+}
+
+.elite{
+  border: .2rem solid rgb(123, 16, 41);
+  box-shadow: 0 0 75px rgb(123, 16, 41);
+}
+
+.women{
+  border: .2rem solid rgb(174, 60, 222);
+}
+
+.card-front,
+.card-back {
+  align-items: stretch;
+  background-image: url('/images/background/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.75rem;
+  /* background-image : linear-gradient(to right,rgb(29, 14, 52),rgb(13, 14, 75)); */
+}
+
+.player-name {
+  font-size: 1.1rem;
+  font-family: 'Economica', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  line-height: 1.2rem;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: rgba(13, 156, 151, 0.85);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.front-stat-container,
+.back-stat-container {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: .5rem;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  text-align: center;
+}
+
+.front-stat-container {
+  align-items: center;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.back-stat-container {
+  margin: .20rem .20rem 0 .20rem;
+  padding: .3rem;
+}
+
+.stat-text {
+  font-size: .8rem;
+  font-family: "Dosis", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  color: #1B223E;
+}
+
+/* CSS styles for the glowy border effect */
+.border-glow {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5);
+}
+
